@@ -1,0 +1,140 @@
+*{
+  padding:0;
+  margin: 0;
+}
+body {
+  /* margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
+  background-color: black;
+  color: aliceblue;
+  font-size: 22px;
+}
+.App{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 500px;
+  max-height: 100vh;
+  margin: auto;
+  background-color: rgb(156, 211, 156);
+}
+header,Footer{
+  width:calc(100% - 2px);
+  padding-left: 0.025em;
+  background-color: mediumseagreen;
+  color: white;
+  padding-left:20px;
+  line-height:70px;
+}
+main{
+  text-align: left;
+  /* border: 1px solid red; */
+  width: 500px;
+  /* padding:20px; */
+  margin:0.025rem 0;
+  overflow-y: scroll;
+
+}
+
+ul li::before{
+  content: "\200b";
+}
+main ul{
+  list-style: none;
+  margin: 0;
+  
+}
+main .item{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: .5rem 0 .5rem .5rem;
+  align-items: center;
+  border: 1px solid white;
+  color: black;
+  font-weight: 600;
+  border-radius: 5px;
+  border-bottom:2.5px ;
+  height:70px;
+  padding: 0 10px;
+  margin: 0 10px;
+}
+.item input[type="checkbox"]{
+  text-align: center;
+  min-width: 48px;
+  min-height: 48px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+.item input[type="checkbox"]:focus + label{
+  text-decoration: underline;
+}
+.item>label{
+  font-size: 0.75em;
+  flex-grow: 1;
+}
+.item .deletebtn{
+  min-width: 48px;
+  min-height: 48px;
+  cursor: pointer;
+}
+.item img:hover{
+  color:red;
+}
+.addForm{
+  display: flex;
+  justify-content:flex-start;
+  flex-direction: row;
+  padding: .5rem 0 .5rem .5rem;
+  width:calc(100% - 20px);
+  align-items: center;
+  height:70px;
+  padding: 0 10px;
+  margin: 0 10px; 
+  margin-top: 10px;
+  content:"\200b";
+}
+.addForm input[type='text']{
+  flex-grow: 1;
+  max-width: calc(100%-50px);
+  height: 48px;
+  font-size: 1.5rem;
+  outline: none;
+  padding-right: 20px;
+  border-radius: 5px;
+  margin-right: 5px;
+  border: none;
+  
+}
+.deletelogo{
+  object-fit: contain;
+  height: 45px;
+  cursor: pointer;
+}
+
+/* .deletelogo :hover{
+
+}
+button :focus,
+button :hover{
+
+} */
+.searchForm input[type='text']{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-grow: 1;
+  max-width: calc(100%-50px);
+  max-height: 70px;
+  font-size: 1.5rem;
+  outline: none;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: none;
+}

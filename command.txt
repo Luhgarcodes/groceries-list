@@ -1,0 +1,29 @@
+npx json-server -p 3500 -w data/db.json
+json-server --watch data/db.json --port 8000
+npm i axios
+
+
+
+
+git status
+git init
+git status
+git add .
+git status
+git commit -m "second commut"
+git remote add origin https://github.com/Luhgarcodes/api-fetching-react-js.git
+git push -u origin master
+
+
+npm i gh-pages --save-dev
+
+"homepage":"https://Luhgarcodes.github.io/api-fetching-react-js",
+ 
+ 
+ scripts
+
+
+ "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
+
+npm run deploy
